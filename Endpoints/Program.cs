@@ -1,6 +1,10 @@
-﻿var builder = WebApplication.CreateBuilder();
+﻿using Application.Extensions;
+
+var builder = WebApplication.CreateBuilder();
 
 builder.Services.AddHealthChecks();
+
+builder.Services.RegisterApplicationServices();
 
 var app = builder.Build();
 
