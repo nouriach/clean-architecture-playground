@@ -5,5 +5,5 @@ namespace Application.Features.Breweries.Queries.GetBreweryId;
 
 public class GetBreweryById : IRequest<BreweryResponse>
 {
-    
+    public Guid Id { get; set; }
 }
