@@ -16,7 +16,7 @@ public class GetAllBreweriesByClientHandler : IRequestHandler<GetAllBreweriesByC
     public async Task<BreweriesResponse> Handle(GetAllBreweriesByClient request, CancellationToken cancellationToken)
     {
         var breweryEntities = await _client.GetAllBreweries();
-        
+
         var breweries = breweryEntities.Select(x => new BreweryResponse() { Name = x.Name });
 
         return new BreweriesResponse

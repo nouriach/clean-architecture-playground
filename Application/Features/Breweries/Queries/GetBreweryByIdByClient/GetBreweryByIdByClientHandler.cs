@@ -16,7 +16,7 @@ public class GetBreweryByIdByClientHandler : IRequestHandler<GetBreweryByIdByCli
     public async Task<BreweryResponse> Handle(GetBreweryByIdByClient request, CancellationToken cancellationToken)
     {
         var breweryEntity = await _client.GetBreweryById(request.Id);
-        
+
         return new BreweryResponse
         {
             Name = breweryEntity.Name

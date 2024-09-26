@@ -30,7 +30,7 @@ public class BreweryApiClient : IApiClient
         var responseContent = await response.Content.ReadAsStringAsync();
         return JsonSerializer.Deserialize<IEnumerable<Brewery>>(responseContent, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
     }
-    
+
     private async Task<HttpResponseMessage> ExecuteGetAllRequestAsync()
     {
         var httpRequest = new HttpRequestMessage(HttpMethod.Get, "https://api.openbrewerydb.org/v1/breweries?per_page=5");
