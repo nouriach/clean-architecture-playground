@@ -42,6 +42,10 @@ The solution is divided into several projects, each playing a specific role with
     - Migrations
     - Repositories
 
+## The Flow of Code
+ 
+![image](https://github.com/user-attachments/assets/f78fcd43-25b0-47ca-89dd-89c7ea3617a6)
+
 ## Package Summary
 
 Below is a list of key packages used in the solution, along with the projects they are included in:
