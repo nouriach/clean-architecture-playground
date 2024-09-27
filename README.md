@@ -88,3 +88,24 @@ Below is a list of key packages used in the solution, along with the projects th
     dotnet run --project src/Endpoints
 
 6. Navigate to http://localhost:5000/swagger to access the Swagger UI for API documentation.
+
+## Want to get involved?
+
+The following `Commands` have been left unfinished:
+ ```
+|_Features
+    |_Commands
+        |_CreateBrewery
+            |_CreateBrewery
+            |_CreateBreweryHandler
+        |_DeleteBrewery  
+            |_DeleteBrewery
+            |_DeleteBreweryHandler
+        |_UpdateBrewery
+            |_UpdateBrewery
+            |_UpdateBreweryHandler
+```
+Use these requirements to practice writing full vertical slices that work through the Clean Architecture structure.
+The task will also benefit people who have never used Mediatr before.
+
+Build out your endpoint, trigger your Mediatr handler and call the `BreweryRepository` to retrieve and modify data in the database.
